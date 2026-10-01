@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudioYoga</title>
+
+    <!-- Google Fonts: Encode Sans Expanded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+    
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS Personalizzato -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BARRA DI NAVIGAZIONE -->
+    <nav class="navbar navbar-expand-lg bg-grey-lilac border-bottom fixed-top">
+        <div class="container-fluid">
+            
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="logoyoga.jpg" alt="Logo" class="rounded-circle" width="60" height="60" style="object-fit: cover;">
+            </a>
+
+            <!-- Toggler Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Contenuto Menu -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <!-- Voci al Centro -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Corsi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Orari</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                </ul>
+
+                <!-- Bottone a Destra -->
+                <div class="d-flex justify-content-center justify-content-lg-end mt-2 mt-lg-0">
+                    <button type="button" class="btn btn-lilac btn-ultra-rounded">
+                        Lezione di prova
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </nav> 
+    <!-- FINE NAVBAR -->
+
+   <!-- SEZIONE PRINCIPALE: CAROSELLO CON TESTO FISSO -->
+<main style="padding-top: 100px;" class="pb-5">
+    <div class="container" style="max-width: 1100px;">
+        <div id="carouselExampleIndicators" class="carousel slide rounded-4 overflow-hidden shadow position-relative">
+            
+            <!-- 1. Immagini del Carosello (Altezza aumentata a 500px) -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="yoga 1.jpg" class="d-block w-100" alt="Slide 1" style="height: 500px; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="yoga 2.jpg" class="d-block w-100" alt="Slide 2" style="height: 500px; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="yoga 3.jpg" class="d-block w-100" alt="Slide 3" style="height: 500px; object-fit: cover;">
+                </div>
+            </div>
+
+            <!-- 2. Testo Fisso Sovrapposto con H1 Verde Salvia -->
+            <div class="position-absolute top-50 start-50 translate-middle text-center px-3 w-100" style="z-index: 10; pointer-events: none;">
+                <h1 class="fw-bold mb-2" style="color: var(--lilac, #d8bbff);">Il tuomspazio per fiorire</h1>
+                <p class="lead mb-0 text-white">Trova il tuo equilibrio tra mente e corpo con le nostre pratiche quotidiane.</p>
+                 <div class="mt-3" style="pointer-events: auto;">
+                <a href="#corsi" class="btn btn-lilac btn-ultra-rounded shadow-sm">Scopri i corsi</a>
+                </div>
+            </div>
+
+            <!-- 3. Indicatori -->
+            <div class="carousel-indicators" style="z-index: 11;">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <!-- 4. Frecce Avanti/Indietro -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="z-index: 11;">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="z-index: 11;">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+    </div>
+
+    <!-- LINEA DIVISORIA TRA LE SEZIONI -->
+<div class="container">
+    <hr class="my-5" style="border: 0; border-top: 1px solid #4a4a4a; opacity: 0.4;">
+</div>
+
+    <!-- SECONDA SEZIONE: CARD CORSI -->
+<section id="corsi" class="container my-5">
+    
+    <!-- Titolo Sezione -->
+    <div class="text-center mb-5">
+        <h2 class="fw-bold text-sage">I Nostri Corsi</h2>
+        <p class="text-muted">Scegli il percorso più adatto alle tue esigenze</p>
+    </div>
+
+    <!-- Griglia Responsive a 3 Colonne -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        
+        <!-- CARD 1 -->
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                <img src="yoga 1.jpg" class="card-img-top" alt="Hatha Yoga" style="height: 200px; object-fit: cover;">
+                <div class="card-body d-flex flex-column text-center">
+                    <h5 class="card-title fw-bold text-sage">Hatha Yoga</h5>
+                    <p class="card-text text-muted flex-grow-1">Una pratica dolce per migliorare flessibilità, postura e respirazione quotidiana.</p>
+                    <a href="#" class="btn btn-lilac btn-ultra-rounded mt-auto align-self-center">Scopri di più</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                <img src="yoga 2.jpg" class="card-img-top" alt="Vinyasa Flow" style="height: 200px; object-fit: cover;">
+                <div class="card-body d-flex flex-column text-center">
+                    <h5 class="card-title fw-bold text-sage">Vinyasa Flow</h5>
+                    <p class="card-text text-muted flex-grow-1">Movimenti dinamici sincronizzati con il respiro per ritrovare energia e forza.</p>
+                    <a href="#" class="btn btn-lilac btn-ultra-rounded mt-auto align-self-center">Scopri di più</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                <img src="yoga 3.jpg" class="card-img-top" alt="Meditazione" style="height: 200px; object-fit: cover;">
+                <div class="card-body d-flex flex-column text-center">
+                    <h5 class="card-title fw-bold text-sage">Meditazione e Relax</h5>
+                    <p class="card-text text-muted flex-grow-1">Tecniche di respirazione e mindfulness per ridurre lo stress e ritrovare la calma.</p>
+                    <a href="#" class="btn btn-lilac btn-ultra-rounded mt-auto align-self-center">Scopri di più</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- LINEA DIVISORIA TRA LE SEZIONI -->
+<div class="container">
+    <hr class="my-5" style="border: 0; border-top: 1px solid #4a4a4a; opacity: 0.4;">
+</div>
+
+<!-- TERZA SEZIONE: FAQ (DOMANDE FREQUENTI) -->
+<section id="faq" class="container mb-5" style="max-width: 800px;">
+    
+    <!-- Titolo Sezione -->
+    <div class="text-center mb-4">
+        <h2 class="fw-bold text-sage">Domande Frequenti (FAQ)</h2>
+        <p class="text-muted">Tutto quello che c'è da sapere prima di iniziare la tua pratica</p>
+    </div>
+
+    <!-- Accordion Flush contenuto in una card sfumata -->
+    <div class="accordion accordion-flush rounded-4 overflow-hidden shadow-sm p-3 bg-white" id="accordionFlushExample">
+        
+        <!-- DOMANDA 1 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-semibold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Cosa devo portare per la mia prima lezione?
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-muted">
+                    Ti consigliamo di indossare abiti comodi e traspiranti. Presso lo studio troverai tappetini e mattoncini sanificati a disposizione, ma se preferisci puoi portare il tuo tappetino personale e una borraccia d'acqua.
+                </div>
+            </div>
+        </div>
+
+        <!-- DOMANDA 2 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-semibold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    I corsi sono adatti anche a chi non ha mai fatto yoga?
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-muted">
+                    Assolutamente sì! I nostri insegnanti guidano ogni classe offrendo varianti per ogni livello, permettendoti di praticare in totale sicurezza anche se è la tua primissima volta.
+                </div>
+            </div>
+        </div>
+
+        <!-- DOMANDA 3 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-semibold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Come posso prenotare la lezione di prova gratuita?
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-muted">
+                    Puoi prenotare la tua lezione di prova cliccando sul bottone "Lezione di prova" nella barra di navigazione in alto oppure contattandoci direttamente via e-mail o telefono.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
